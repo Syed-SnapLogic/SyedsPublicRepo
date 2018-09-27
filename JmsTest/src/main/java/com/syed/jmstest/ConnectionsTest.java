@@ -92,7 +92,7 @@ public class ConnectionsTest extends Thread {
     public static void main(String str[]) {
         System.out.println("Testing the approach used in JMS snaps");
         try {
-            Thread.sleep(15000);
+            Thread.sleep(20000);
         } catch (Exception x) {
             // NO OP
         }
