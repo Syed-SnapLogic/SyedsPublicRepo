@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo file="/home/gaian/SyedsWorld/MyProjects/3rdParty/oracledemo/target/classes/build.properties">build_number=DemoA
+                                    snap_pack_version=1
+                                    snap_pack_fqid=oracledemo-snap-1-DemoA.zip
+                                    snap_pack_url=$SNAP_HOME/oracledemo/target/oracledemo-build
+                                    snap_pack_name=${NAME}</echo>
+</target>
+</project>
