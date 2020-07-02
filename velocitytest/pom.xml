@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.syed</groupId>
+    <artifactId>velocitytest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <compilerId>javac</compilerId>
+                    <source>8</source>
+                    <target>11</target>
+                    <compilerArgs>
+                        <arg>-XDcompilePolicy=simple</arg>
+                        <!-- disabling error prone plugin for now as lots of syntactical changes needed -->
+                        <!--
+                        <arg>-Xplugin:ErrorProne
+                             -Xep:AssertEqualsArgumentOrderChecker:ERROR
+                             -Xep:DefaultCharset:ERROR
+                             -Xep:EqualsIncompatibleType:ERROR
+                             -Xep:ImmutableEnumChecker:ERROR
+                             -Xep:MissingOverride:ERROR
+                             -Xep:RemoveUnusedImports:ERROR
+                             -Xep:StreamResourceLeak:ERROR
+                             -Xep:ThreadLocalUsage:ERROR
+                             -Xep:UnusedException:ERROR
+                             -Xep:UnnecessaryParentheses:ERROR
+                             -XepDisableWarningsInGeneratedCode
+                             -XepExcludedPaths:.*/generated-sources/.*</arg>
+                        -->
+                        <arg>-Xlint:all</arg>
+                    </compilerArgs>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>com.google.errorprone</groupId>
+                            <artifactId>error_prone_core</artifactId>
+                            <version>2.3.4</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies><!--
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>oro</groupId>
+            <artifactId>oro</artifactId>
+            <version>2.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.8</version>
+        </dependency>-->
+        <!--<dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-handler</artifactId>
+            <version>4.0.56.Final</version>
+        </dependency>-->
+        <!--<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty</artifactId>
+    <version>3.9.2.Final</version>
+</dependency>
+<dependency>
+    <groupId>io.netty</groupId>
+    <artifactId>netty-all</artifactId>
+    <version>4.1.17.Final</version>
+</dependency>
+<dependency>
+<groupId>com.fasterxml.woodstox</groupId>
+<artifactId>woodstox-core</artifactId>
+<version>5.0.3</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-auth</artifactId>
+    <version>2.8.5</version>
+</dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>--> 
+        <dependency>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.messaging.saaj</groupId>
+            <artifactId>saaj-impl</artifactId>
+            <version>1.5.1</version>
+        </dependency><!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
