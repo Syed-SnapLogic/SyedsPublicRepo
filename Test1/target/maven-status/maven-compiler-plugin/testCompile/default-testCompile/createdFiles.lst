@@ -1,0 +1,4 @@
+com/snaplogic/snaps/test1/CurrencyConverterTest.class
+com/snaplogic/snaps/test1/CurrencyConverterTest$ExchangeRatesSupplier.class
+com/snaplogic/snaps/test1/CurrencyConverterTest$FakeForeignExchangeInjector.class
+com/snaplogic/snaps/test1/CurrencyConverterTest$FakeForeignExchange.class
